@@ -43,4 +43,3 @@ async def moderate_text(model_choice: ModelChoice, text: str) -> TextModerationR
     #       then return result.output
     result = await text_moderation_agent.run(text, model=model_choice.model, model_settings=model_choice.model_settings)
     return result.output
-    raise NotImplementedError("TODO: Implement text moderation")

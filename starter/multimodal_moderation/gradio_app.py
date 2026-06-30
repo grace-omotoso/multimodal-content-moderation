@@ -386,7 +386,7 @@ def create_chat_interface() -> gr.Blocks:
                 gr.ChatInterface(
                     fn=chat_session.chat_with_gemini,
                     type="messages",  # Use newer messages format (supports multimodal)
-                    multimodal=...,  # Enable file uploads by setting this to True
+                    multimodal=True,  # Enable file uploads by setting this to True
                     editable=False,  # Don't allow editing past messages
                     textbox=gr.MultimodalTextbox(
                         file_count="multiple",  # Allow multiple files
